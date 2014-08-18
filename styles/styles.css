@@ -16,20 +16,18 @@ body, h1, h2, nav, header, ul, li {
   background-color: yellow;
 }
 
-header {
-	max-width: 1170px;
-}
-
-nav ul li {
+nav ul {
+	float: right;
 	list-style: none;
+}
+
+.column-features {
+	background-color: red;
+	width: 33%;
 	float: left;
 }
 
-.intro {
-	float: left;
-}
-
-.feature-details {
-	max-width: 370px;
+#gallery {
+	clear: both;
 }
 
