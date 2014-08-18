@@ -1,2 +1,35 @@
 @charset "UTF-8";
 /* CSS Document */
+
+body, h1, h2, nav, header, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+	background-color: aqua;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+#home {
+  background-color: yellow;
+}
+
+header {
+	max-width: 1170px;
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+}
+
+.intro {
+	float: left;
+}
+
+.feature-details {
+	max-width: 370px;
+}
+
