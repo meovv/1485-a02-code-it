@@ -7,13 +7,12 @@ body, h1, h2, nav, header, ul, li {
 }
 
 .wrapper {
-	background-color: aqua;
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
 #home {
-  background-color: yellow;
+  background-color: #f8e514;
 }
 
 nav ul {
@@ -21,13 +20,68 @@ nav ul {
 	list-style: none;
 }
 
+.intro {
+	float: left;
+}
+
+
 .column-features {
 	background-color: red;
 	width: 33%;
 	float: left;
 }
 
+.feature-details {
+	height: 142px;
+	width: 370px;
+}
+
 #gallery {
 	clear: both;
+	background-color: #fafafa;
+	overflow: auto;
+}
+
+.column-gallery {
+	width: 20%;
+	float: left;
+}
+
+.column-gallery img, #show-reel img {
+	width: 100%;
+}
+
+
+#about {
+	background-color: #fafafa;
+	overflow: auto;
+}
+
+.column-about {
+	background-color: red;
+	width: 25%;
+	float: left;
+}
+
+#blockquote {
+	clear: both;
+}
+
+
+#featured-in {
+	clear: both;
+	background-color: #f8e514;
+	overflow: auto;
+}
+
+.column-featured-in {
+	width: 20%;
+	float: left;
+}
+
+.column-footer {
+	background-color: red;
+	width: 25%;
+	float: left;
 }
 

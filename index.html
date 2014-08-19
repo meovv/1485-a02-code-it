@@ -23,7 +23,7 @@
 </header>
 
 <div class="intro">
-<h1>Introducing Umbrella</h1>
+<h2>Introducing Umbrella</h2>
 <p>Made to modify and use anywhere</p>
 	<ul>
 	<li>Sed ut perspiciatis unde omnis</li>
@@ -79,59 +79,99 @@
   	</section>
 
 <section id="gallery">
-<div class="wrapper">
+	<div class="wrapper">
     <h2>Screenshots Gallery</h2>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p>
- 	    <div><img src="images/gallery-screen.png" alt="application screen shot"></div>
-    <div><img src="images/gallery-screen.png" alt="application screen shot"></div>
-    <div><img src="images/gallery-screen.png" alt="application screen shot"></div>
-    <div><img src="images/gallery-screen.png" alt="application screen shot"></div>
-    <div><img src="images/gallery-screen.png" alt="application screen shot"></div>
-</div>
+    </div>
+ 	    <div class="column-gallery">
+        <img src="images/gallery-screen.png" alt="application screen shot">
+        </div>
+    <div class="column-gallery">
+    <img src="images/gallery-screen.png" alt="application screen shot">
+    </div>
+    <div class="column-gallery">
+    <img src="images/gallery-screen.png" alt="application screen shot">
+    </div>
+    <div class="column-gallery">
+    <img src="images/gallery-screen.png" alt="application screen shot">
+    </div>
+    <div class="column-gallery">
+    <img src="images/gallery-screen.png" alt="application screen shot">
+    </div>
 </section>
 
 <section id="show-reel">
 <div class="wrapper">
-<h2>Show Reel</h2> <!-- only here to separate sections-->
-
-<div><img src="images/show-reel-placeholder.png" alt="show reel video"></div>
+<h2>Show Reel</h2>
 </div>
+<!-- only here to separate sections-->
+<img src="http://placehold.it/1600x700">
 </section>
 
 <section id="about">
     <div class="wrapper">
     <h2>People Behind The App</h2>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-  <!-- four images here -->
+  <div class="column-about">
+  <div>
+  <img src="images/people-behind.png">
   <h4>Jonh Doe eh</h4>
   <p>Lead Designer</p>
+  </div>
+  </div>
+  <div class="column-about">
+  <div>
+  <img src="images/people-behind.png">
   <h4>Amanda Fenrnicas</h4>
   <p>Lead Developer</p>
+  </div>
+  </div>
+  <div class="column-about">
+  <div>
+  <img src="images/people-behind.png">
   <h4>Hamberg Rodny </h4>
   <p>Artist</p>
+  </div>
+  </div>
+  <div class="column-about">
+  <div>
+  <img src="images/people-behind.png">
   <h4>Jessica Leonardo</h4>
   <p>Photographer</p>
+  </div>
+  </div>
   </div>
 </section>
 
 <section id="blockquote">
 <div class="wrapper">
-<p>&ldquo;</p>
+<p id="quote-mark">&ldquo;</p>
 <blockquote>Sed ut perspiciatis unde omnis iste natus errror sit voluptatem accusantium doloremque laudantium, totam rem apariam, eaque ipsa quae ab illu inventore veritatis et quasi architicto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia con consequuntur magni dolores eos que ratione voluptatem seque nesciunt.</blockquote>
-	<!-- one image here -->
+	<div><!-- one image here -->
 	<h4>Robert Leonaro</h4>
     <p>CEO at CUBEDES </p>
+    </div>
     </div>
 </section>
 
 <section id="featured-in">
 <div class="wrapper">
 	<h2>Featured In</h2>
+    <div class="column-featured-in">
     <img src="images/the-verge-logo.png" alt="the verge logo">
+    </div>
+    <div class="column-featured-in">
     <img src="images/mashable_logo.png" alt="mashable logo">
+    </div>
+    <div class="column-featured-in">
     <img src="images/tnw_logo.png" alt="the next web logo">
+    </div>
+    <div class="column-featured-in">
     <img src="images/behance-logo.png" alt="behance logo">
+    </div>
+    <div class="column-featured-in">
     <img src="images/dribble-logo.png" alt="dribble logo">
+    </div>
     </div>
 </section>
 
@@ -152,15 +192,21 @@
 
 <footer>
 <div class="wrapper">
-	<div><!-- logo here -->
+	<div class="column-footer">
+    <div><!-- logo here -->
     <p>Eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+    </div>
     
-	<div><h4>Subscribe</h4>
+	<div class="column-footer">
+    <div><h4>Subscribe</h4>
     <form method="get" action="">
     <input type="text" name="Subscribe" id="form-subscribe" value="Subscribe" maxlength="50">
     <input type="submit" value="" style=";"></form>
     </div>
+    </div>
+    
+    <div class="column-footer">
     <div><h4>Explore</h4>
     <ul>
     	<li><a href="http://www.envato.com/">Envato</a></li>
@@ -173,8 +219,13 @@
         <li><a href="https://www.yahoo.com/">Yahoo</a></li>
         </ul>
         </div>
-     <div><p>Created by themecurve exclusive for kreativeshowcase</p>
+        </div>
+        
+        
+     	<div class="column-footer">
+        <div><p>Created by themecurve exclusive for kreativeshowcase</p>
      <p>© 2014 Umbrella. All Rights Reserved.</p>
+     </div>
      </div>
      </div>
 </footer>
