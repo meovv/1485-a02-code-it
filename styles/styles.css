@@ -6,13 +6,20 @@ body, h1, h2, nav, header, ul, li {
   padding: 0;
 }
 
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
 #home {
-  background-color: #f8e514;
+	clear: both;
+	background-color: #f8e514;
 }
 
 nav ul {
@@ -20,20 +27,16 @@ nav ul {
 	list-style: none;
 }
 
-.intro {
+#intro {
 	float: left;
 }
 
-
-.column-features {
+.column-features, .column-gallery {
 	background-color: red;
 	width: 33%;
 	float: left;
-}
-
-.feature-details {
-	height: 142px;
-	width: 370px;
+	
+	padding-right: 30px;
 }
 
 #gallery {
@@ -42,12 +45,14 @@ nav ul {
 	overflow: auto;
 }
 
-.column-gallery {
+.column-gallery, .column-featured-in {
 	width: 20%;
 	float: left;
+	
+	padding-right: 45px;
 }
 
-.column-gallery img, #show-reel img {
+.column-gallery img, #show-reel img, #features img, #about img, {
 	width: 100%;
 }
 
@@ -61,6 +66,8 @@ nav ul {
 	background-color: red;
 	width: 25%;
 	float: left;
+	
+	padding-right: 30px;
 }
 
 #blockquote {
@@ -74,8 +81,8 @@ nav ul {
 	overflow: auto;
 }
 
-.column-featured-in {
-	width: 20%;
+
+#contact-info {
 	float: left;
 }
 
@@ -83,5 +90,7 @@ nav ul {
 	background-color: red;
 	width: 25%;
 	float: left;
+	
+	padding-right: 30px;
 }
 
