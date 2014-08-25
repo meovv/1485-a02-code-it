@@ -12,9 +12,14 @@ body, h1, h2, nav, header, ul, li {
   padding: 0;
 }
 
-p, li, blockquote, a {
+p, li, blockquote, a, input {
 	font-family: 'Open Sans', sans-serif;
 }
+
+a {
+	text-decoration: none;
+}
+
 
 h1, h2, h3, h4 {
 	font-family: 'Open Sans', sans-serif; font-weight: 700;
@@ -70,7 +75,14 @@ nav li {
 }
 
 nav a {
+	color: gray;
+	font-weight: 700;
+	text-decoration: none;
 	padding-right: 20px;
+}
+
+nav a:hover {
+	color: black;
 }
 
 #home .wrapper {
@@ -116,9 +128,39 @@ nav a {
 .column-features, .column-gallery {
 	width: 33%;
 	float: left;
-	
 	padding-right: 30px;
 }
+
+.feature-details {
+  padding:20px;
+  overflow:auto;
+  cursor:default;
+}
+
+.feature-details p {
+	font-size: 8px;
+}
+
+
+.feature-details:hover{
+	background: #fefce9; 
+	width:100%;
+	display:block;
+}
+
+.feature-details span {
+  float:left;
+  font-size:30px;
+  line-height:30px;
+  width:15%;
+  margin-top:0;
+}
+
+.feature-content {
+  width:85%;
+  float:left;
+}
+
 
 #gallery {
 	clear: both;
@@ -158,6 +200,18 @@ nav a {
 	clear: both;
 }
 
+blockquote {
+	font-size: 10px;
+}
+
+#quote-mark {
+	text-align: center;
+	font-size: 66px;
+	margin: 0;
+	padding: 0;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif
+}
+
 
 #featured-in {
 	clear: both;
@@ -165,16 +219,45 @@ nav a {
 	overflow: auto;
 }
 
-
 #contact-info {
-	float: left;
+	ffloat: left;
+	width: 45%;
+	margin-top: 172px;
+}
+
+#contact img {
+	float: right;
+}
+
+#contact-info input {
+	width: 570px;
+	border: 0px solid #000000;
+    border-bottom-width: 1px;
+    background-color: transparent;
+}
+
+footer {
+	clear: both;
 }
 
 
 .column-footer {
 	width: 25%;
 	float: left;
-	
 	padding-right: 30px;
+}
+
+#footer-description {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer a {
+	color: gray;
+	font-size: 10px;
 }
 
