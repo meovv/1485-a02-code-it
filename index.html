@@ -5,6 +5,11 @@
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 <title>Umbrella</title>
 
+<link rel="stylesheet" href="pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+
+<!-- Optional - Adds useful class to manipulate icon font display -->
+<link rel="stylesheet" href="pe-icon-7-stroke/css/helper.css">
+
 </head>
 
 <body>
@@ -12,7 +17,7 @@
 <div class="wrapper">
 <header>
 	<div class="logo">
-    <h1>Umbrella</h1><!-- logo here -->
+    <h1><span class="pe-7s-umbrella"></span>Umbrella</h1>
     </div>
 	<nav>
 		<ul>
@@ -28,14 +33,17 @@
 <div class="intro">
 <h2>Introducing Umbrella</h2>
 <p class="intro-list">Made to modify and use anywhere</p>
-	<ol>
-	<li>Sed ut perspiciatis unde omnis</li>
-    <li>Iste natus error sit voluptatem accusantium</li>
-    <li>doloremque laudantium</li>
-    </ol>
-    <a href="">download button</a>
-    <a href="">view gallery button</a>
+	<div class="intro-content">
+    <ul>
+	<li><span class="pe-7s-angle-right"></span>Sed ut perspiciatis unde omnis</li>
+    <li><span class="pe-7s-angle-right"></span>Iste natus error sit voluptatem accusantium</li>
+    <li><span class="pe-7s-angle-right"></span>doloremque laudantium</li>
+    </ul>
+    <button type: onClick="download"><a href=""><span class="pe-7s-cloud-download"></span>Download</a></button>
+    <button type: onClick="download"><a href=""><span class="pe-7s-look"></span>Gallery</a></button>
 </div>
+</div>
+
 <div>
 <img src="images/i-phone-hand.png" alt="i phone in hand">
 </div>
@@ -49,21 +57,21 @@
     <p id="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p></div>
     <div class="column-features">
     <div class="feature-details">
-  <span>X</span>
+  <span class="pe-7s-tools"></span> 
   <div class="feature-content">
     <h3>Accusan timar</h3>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
   	</div>
 	</div>
     <div class="feature-details">
-  <span>X</span>
+  <span class="pe-7s-timer"></span> 
   <div class="feature-content">
     <h3>Accusan timar</h3>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
   	</div>
 	</div>
     <div class="feature-details">
-  <span>X</span>
+  <span class="pe-7s-music"></span> 
   <div class="feature-content">
     <h3>Accusan timar</h3>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
@@ -77,22 +85,22 @@
     
     
     <div class="column-features">
-    <<div class="feature-details">
-  <span>X</span>
+    <div class="feature-details">
+  <span class="pe-7s-user"></span> 
   <div class="feature-content">
     <h3>Accusan timar</h3>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
   	</div>
 	</div>
     <div class="feature-details">
-  <span>X</span>
+  <span class="pe-7s-paper-plane"></span> 
   <div class="feature-content">
     <h3>Accusan timar</h3>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
   	</div>
 	</div>
     <div class="feature-details">
-  <span>X</span>
+  <span class="pe-7s-camera"></span> 
   <div class="feature-content">
     <h3>Accusan timar</h3>
     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
@@ -231,16 +239,21 @@
 <footer>
 <div class="wrapper">
 	<div class="column-footer">
-    <div><!-- logo here -->
+    <div class="logo"><h3><span class="pe-7s-umbrella"></span>Umbrella</h3></div>
+    <div>
     <p id="footer-description">eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     </div>
     
 	<div class="column-footer">
     <div><h4>Subscribe</h4>
+    <div class="subscribe">
     <form method="get" action="">
-    <input type="text" name="Subscribe" id="form-subscribe" value="Subscribe" maxlength="50">
-    <input type="submit" value="Subscribe" style=";"></form>
+    <input type="text" name="Subscribe" id="form-subscribe" value="" maxlength="50">
+    <button type: form=""><span class="pe-7s-right-arrow pe-2x"></span></button>
+    </div>
+    </form>
+    
     </div>
     <div><p id="footer-description">eusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
