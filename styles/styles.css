@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*Layout*/
+
 .wrapper {
 	 max-width: 1170px;
   margin: 0 auto;
@@ -12,6 +14,7 @@ body, h1, h2, nav, header, ul, li {
   padding: 0;
 }
 
+/*typography*/
 p, li, blockquote, a, input {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -30,9 +33,12 @@ h3 {
 }
 
 #section-description {
+	line-height : 25px;
 	font-size: 12px;
 	text-align: center;
 }
+
+/*global*/
 
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
@@ -40,36 +46,41 @@ h3 {
 	box-sizing: border-box;
 }
 
+
+/*header*/
+
 header {
   	overflow: auto;
   	position: fixed;
-  	top: 30px;
+	background: #ffffff;
+  	top: 20px;
   	width: 100%;
+	margin: 0 auto;
   	max-width: 1170px;
-  	margin: 0 auto;
   	z-index: 1;
 }
 
 .logo {
+	padding-left: 20px;
+	padding-top: 25px;
 	float: left;
 }
 
-header, nav {
-	background-color: white;
-}
-
 nav {
+	padding-top: 38px;
 	width: 40%;
 	float: right;
 }
 
 nav ul {
+	text-transform  : uppercase;
 	list-style-type: none;
 	float: right;
-	padding-right: 30px;
+	padding-right: 20px;
 }
 
 nav li {
+	display: inline;
 	float: left;
 }
 
@@ -215,45 +226,112 @@ nav a:hover {
 #about {
 	background-color: #fafafa;
 	overflow: auto;
+	padding-top: 110px;
+	padding-bottom: 150px;
 }
 
 .column-about {
 	width: 25%;
 	float: left;
-	
 	padding-right: 30px;
+}
+
+#about .job {
+	color: gray;
+	font-size: 10px;
+}
+
+.worker {
+  width: 270px;
+  margin: 50px auto;
+}
+
+.worker a {
+  float: left;
+  position: relative;
+}
+
+.worker a img {
+  display: block;
+}
+
+.worker a span {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  text-align: center;
+  background: #f8e72b;
+  color: black;
+  padding: 20px;
+}
+
+.worker a:hover span {
+  display: block;
 }
 
 #blockquote {
 	clear: both;
+	padding-bottom: 250px;
+}
+
+.quote-mark {
+	padding-top: 130px;
+	padding-bottom: 60px;
+}
+
+#blockquote img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#blockquote h4, #blockquote p {
+	text-align: center;
 }
 
 blockquote {
+	line-height : 25px;
+	font-size: 12px;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+#blockquote .job {
+	color: gray;
 	font-size: 10px;
 }
 
-#quote-mark {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif
-}
-
-
 #featured-in {
+	padding-top: 100px;
 	clear: both;
 	background-color: #f8e514;
 	overflow: auto;
 }
 
+#featured-in h3, #featured-in img {
+	padding-bottom: 150px;
+}
+
+#contact {
+	padding-top: 100px;
+}
+
 #contact-info {
-	ffloat: left;
+	float: left;
 	width: 45%;
 	margin-top: 172px;
 }
 
 #contact img {
 	float: right;
+}
+
+#contact ul {
+	padding-bottom: 40px;
 }
 
 #contact-info input {
@@ -263,6 +341,17 @@ blockquote {
     border-bottom-width: 1px;
 	border-bottom-color: #cccccc;
     background-color: transparent;
+}
+
+#contact button {
+	color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.pe-7s-mail {
+	padding-right: 5px;
 }
 
 footer {
@@ -296,8 +385,12 @@ footer ul {
 	list-style: none;
 }
 
-footer a {
+.explore li {
+	float: left;
+	width: 50%;
+}
 
+footer a {
 	font-size: 10px;
 }
 
