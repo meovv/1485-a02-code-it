@@ -135,17 +135,18 @@ nav a:hover {
 .intro a {
 	text-decoration: none;
 	color: black;
+	padding: 15px 30px;
+  border: 1px solid black;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.intro a:hover {
+	opacity: .5;
 }
 
 .pe-7s-angle-right {
 	padding-right: 15px;
-}
-
-#home button {
-	color: black;
-  border: 1px solid black;
-  background-color: transparent;
-  font-size: 18px;
 }
 
 .pe-7s-cloud-download, .pe-7s-look {
@@ -273,6 +274,16 @@ nav a:hover {
   display: block;
 }
 
+#about span ul{
+	list-style: none;
+	list-style-position: inside;
+}
+
+#about span li {
+	width: 30px;
+	height: 30px;
+}
+
 #blockquote {
 	clear: both;
 	padding-bottom: 250px;
@@ -335,6 +346,7 @@ blockquote {
 }
 
 #contact-info input {
+	padding: 25px 0;
 	color: gray;
 	width: 570px;
 	border: 0px solid #000000;
@@ -343,11 +355,31 @@ blockquote {
     background-color: transparent;
 }
 
-#contact button {
+#contact-info input:focus {
+	outline: 0;
+}
+
+#contact a, #contact button {
 	color: black;
-  border: 1px solid black;
-  background-color: transparent;
-  font-size: 18px;
+	border: none;
+	text-decoration: none;
+	background-color: transparent;
+  font-size: 20px;
+}
+
+#contact a:hover {
+	opacity: .5;
+}
+
+.social-network ul {
+	width: 10%;
+	padding-top: 300px;
+	color: white;
+	overflow: auto;
+}
+
+.social-network li {
+	padding-bottom: 20px;
 }
 
 .pe-7s-mail {
@@ -355,6 +387,7 @@ blockquote {
 }
 
 footer {
+	padding-top: 150px;
 	clear: both;
 }
 
