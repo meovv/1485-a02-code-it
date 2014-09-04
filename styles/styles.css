@@ -66,6 +66,8 @@ header {
 	float: left;
 }
 
+/* navigation */
+
 nav {
 	padding-top: 38px;
 	width: 40%;
@@ -94,6 +96,8 @@ nav a {
 nav a:hover {
 	color: black;
 }
+
+/*home*/
 
 #home .wrapper {
 	position: relative;
@@ -156,6 +160,8 @@ nav a:hover {
 #home li {
 	font-size: 10px;
 }
+
+/*features*/
 
 .column-features, .column-gallery {
 	width: 33%;
@@ -223,6 +229,7 @@ nav a:hover {
 	width: 100%;
 }
 
+/*about*/
 
 #about {
 	background-color: #fafafa;
@@ -277,12 +284,25 @@ nav a:hover {
 #about span ul{
 	list-style: none;
 	list-style-position: inside;
+	padding-top: 130px;
+	padding-left: 35%;
 }
 
 #about span li {
+	list-style: none;
+	display: inline;
+	float: left;
+	padding-right: 5px;
 	width: 30px;
 	height: 30px;
 }
+
+.worker span img:hover {
+	opacity: .5;
+}
+
+
+/*blockquote*/
 
 #blockquote {
 	clear: both;
@@ -316,6 +336,8 @@ blockquote {
 	font-size: 10px;
 }
 
+/*featured in*/
+
 #featured-in {
 	padding-top: 100px;
 	clear: both;
@@ -326,6 +348,8 @@ blockquote {
 #featured-in h3, #featured-in img {
 	padding-bottom: 150px;
 }
+
+/*contact*/
 
 #contact {
 	padding-top: 100px;
@@ -382,25 +406,68 @@ blockquote {
 	padding-bottom: 20px;
 }
 
+.social-network img:hover {
+	opacity: .5;
+}
+
 .pe-7s-mail {
 	padding-right: 5px;
 }
+
+/*footer*/
 
 footer {
 	padding-top: 150px;
 	clear: both;
 }
 
-.subscribe {
-	width: 200px;
-  border: 1px solid white;
-  background-color: transparent;
+.clear:before, .clear:after{
+    content:"";
+    display:table;
 }
 
-.subscribe button {
-	border: 1px solid white;
-  background-color: transparent;
+.clear:after{
+    clear:both;
 }
+
+.clear{
+    zoom:1;
+}    
+/* Form wrapper styling */
+.form-wrapper {
+    width: 100%;
+    border-radius: 3px 0 0 3px;
+    border:2px solid #ccc;
+}
+
+/* Form text input */
+
+.form-wrapper input {
+    padding: 10px 5px;
+    float: left;   
+    border: 0;    
+}
+
+.form-wrapper input:focus {
+    outline: 0;
+}
+
+ 
+
+/* Form submit button */
+.form-wrapper button {
+    width:15%;
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: #ccc;
+    text-transform: uppercase;
+    background:transparent;
+    
+}  
 
 .column-footer {
 	width: 25%;
