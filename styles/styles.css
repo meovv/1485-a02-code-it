@@ -34,7 +34,7 @@ h3 {
 
 #section-description {
 	line-height : 25px;
-	font-size: 12px;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -58,12 +58,19 @@ header {
 	margin: 0 auto;
   	max-width: 1170px;
   	z-index: 1;
+	-moz-box-shadow: 3px 3px 3px #ccc;
+	-webkit-box-shadow: 3px 3px 3px #ccc;
+	box-shadow: 3px 3px 3px #ccc;
 }
 
 .logo {
 	padding-left: 20px;
 	padding-top: 25px;
 	float: left;
+}
+
+.pe-7s-umbrella {
+	padding-right: 5px;
 }
 
 /* navigation */
@@ -109,7 +116,7 @@ nav a:hover {
 }
 
 #home {
-	background: #f8e514 url("http://i.imgur.com/G4zOcCO.jpg") no-repeat center;
+	background: #f8e514 url("../images/umbrella-background.png") no-repeat center;
   background-height: 100%;
   min-height:780px;
 }
@@ -122,7 +129,7 @@ nav a:hover {
 }
 
 #home ul {
-	padding-bottom: 70px;
+	padding-bottom: 35px;
 }
 
 .intro {
@@ -158,7 +165,7 @@ nav a:hover {
 }
 
 #home li {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 /*features*/
@@ -167,7 +174,9 @@ nav a:hover {
 	width: 33%;
 	float: left;
 	padding-right: 30px;
+	padding-top: 80px;
 }
+
 
 .feature-details {
   padding:20px;
@@ -176,11 +185,13 @@ nav a:hover {
 }
 
 .feature-details p {
-	font-size: 10px;
+	font-size: 12px;
+	line-height: 24px;
 }
 
 .feature-details h3 {
 	text-align: left;
+	margin-top: 0;
 }
 
 
@@ -247,6 +258,11 @@ nav a:hover {
 #about .job {
 	color: gray;
 	font-size: 10px;
+	margin-top: 0;
+}
+
+#about h4 {
+	margin-bottom: 0;
 }
 
 .worker {
@@ -326,7 +342,7 @@ nav a:hover {
 
 blockquote {
 	line-height : 25px;
-	font-size: 12px;
+	font-size: 14px;
 	text-align: center;
 	padding-bottom: 80px;
 }
@@ -353,23 +369,25 @@ blockquote {
 
 #contact {
 	padding-top: 100px;
+	border-bottom: solid 2px;
+	border-bottom-color: yellow;
 }
 
-#contact-info {
+.contact-info {
 	float: left;
 	width: 45%;
-	margin-top: 172px;
+	margin-top: 100px;
 }
 
 #contact img {
 	float: right;
 }
 
-#contact ul {
-	padding-bottom: 40px;
+#contact button {
+	padding-top: 40px;
 }
 
-#contact-info input {
+.contact-info input {
 	padding: 25px 0;
 	color: gray;
 	width: 570px;
@@ -379,7 +397,7 @@ blockquote {
     background-color: transparent;
 }
 
-#contact-info input:focus {
+.contact-info input:focus {
 	outline: 0;
 }
 
@@ -397,7 +415,7 @@ blockquote {
 
 .social-network ul {
 	width: 10%;
-	padding-top: 300px;
+	padding-top: 225px;
 	color: white;
 	overflow: auto;
 }
