@@ -32,7 +32,7 @@ h3 {
 	text-align: center;
 }
 
-#section-description {
+.section-description {
 	line-height : 25px;
 	font-size: 14px;
 	text-align: center;
@@ -117,7 +117,6 @@ nav a:hover {
 
 #home {
 	background: #f8e514 url("../images/umbrella-background.png") no-repeat center;
-  background-height: 100%;
   min-height:780px;
 }
 
@@ -279,7 +278,7 @@ nav a:hover {
   display: block;
 }
 
-.worker a span {
+.worker a .content {
   display: none;
   position: absolute;
   top: 0;
@@ -293,18 +292,18 @@ nav a:hover {
   padding: 20px;
 }
 
-.worker a:hover span {
+.worker a:hover .content {
   display: block;
 }
 
-#about span ul{
+#about .content ul{
 	list-style: none;
 	list-style-position: inside;
 	padding-top: 130px;
 	padding-left: 35%;
 }
 
-#about span li {
+#about .content li {
 	list-style: none;
 	display: inline;
 	float: left;
@@ -313,7 +312,7 @@ nav a:hover {
 	height: 30px;
 }
 
-.worker span img:hover {
+.worker .content img:hover {
 	opacity: .5;
 }
 
@@ -409,7 +408,7 @@ blockquote {
   font-size: 20px;
 }
 
-#contact a:hover {
+#contact button:hover {
 	opacity: .5;
 }
 
@@ -447,10 +446,8 @@ footer {
 .clear:after{
     clear:both;
 }
+    
 
-.clear{
-    zoom:1;
-}    
 /* Form wrapper styling */
 .form-wrapper {
     width: 100%;
@@ -493,7 +490,7 @@ footer {
 	padding-right: 30px;
 }
 
-#footer-description {
+.footer-description {
 	clear: both;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 10px;
